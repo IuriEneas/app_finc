@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:app_finc/controller/home_controller.dart';
 import 'package:app_finc/view/home_page.dart';
 import 'package:flutter/material.dart';
 

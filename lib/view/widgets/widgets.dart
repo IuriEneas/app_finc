@@ -1,3 +1,4 @@
+import 'package:app_finc/helper/helper.dart';
 import 'package:app_finc/model/cartao_model.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -24,8 +25,6 @@ class CardWidget extends StatelessWidget {
 }
 
 cartaoBody(Cartao cartao) {
-  final total = cartao.subtotal().toStringAsFixed(2).replaceAll('.', ',');
-
   return Padding(
     padding: const EdgeInsets.all(10),
 
@@ -64,7 +63,7 @@ cartaoBody(Cartao cartao) {
         SizedBox(height: 30),
 
         Text(
-          'R\$ $total',
+          'R\$ ${Helper.dotToComma(cartao.subtotal())}',
           textAlign: TextAlign.center,
           style: GoogleFonts.lato(
             fontSize: 40,

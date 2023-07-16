@@ -11,17 +11,17 @@ class CustomDrawer extends StatelessWidget {
     return ListView(
       children: [
         ListTile(
-          leading: Icon(Icons.calculate),
-          title: Text('Calculadora de juros'),
-          trailing: Icon(Icons.arrow_forward_ios),
+          leading: const Icon(Icons.calculate),
+          title: const Text('Calculadora de juros'),
+          trailing: const Icon(Icons.arrow_forward_ios),
           onTap: () {
             Navigator.of(context).push(MaterialPageRoute(
               builder: (context) => JurosPage(),
             ));
           },
         ),
-        Text('data'),
-        Text('data'),
+        const Text('data'),
+        const Text('data'),
       ],
     );
   }
